@@ -11,6 +11,7 @@
     </div>
 </template>
 <script>
+import axios from 'axios'
 import  'common/less/index'
 export default {
 	name:'Tab',
@@ -18,6 +19,15 @@ export default {
 		return {
 			
 		}
+	},
+	mounted(){
+		axios.get('/api/seller')
+		.then(function (response) {
+		console.log(response);
+		})
+		.catch(function (error) {
+		console.log(error);
+		});
 	}
 }
 </script>
