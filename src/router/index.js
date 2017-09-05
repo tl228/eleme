@@ -5,6 +5,7 @@ import Goods from 'com/Goods/Goods'
 import Ratings from 'com/Ratings/Ratings'
 import Seller from 'com/Seller/Seller'
 
+
 Vue.use(Router)
 
 export default new Router({
